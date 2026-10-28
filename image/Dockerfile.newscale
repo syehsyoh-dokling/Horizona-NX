@@ -1,0 +1,15 @@
+# Track 2 "newscale-v1" (13 Oct 2026): exact M0 engine, text-off, calibrated per family for the
+# 6 Oct scoring rule (expected-error divisor, clip 8.0). Grid-searched on the 71 validation cards
+# with the organizer's published divisor formulas (simulators/t2sim/new_scale.py, grid_new.py):
+#   F1: Student-t(5) innovations, zero drift       F2: width x1.5, zero drift
+#   F3: width x1.25, Student-t(5), zero drift      F4: width x3.0
+# Same image bytes as dev-20261002-recall (2 Oct agent, per-family variants supported) with text off and the variant env rewritten.
+FROM ghcr.io/syehsyoh-dokling/qf-forecast@sha256:80281c7918adc398937948df39d9eed5dafa65f72d28c1ba9890ca2d00e72bca
+ENV T2_M0_TAILS="" \
+    T2_M0_VARIANT="" \
+    T2_M0_FAMILY_VARIANT="F1:t_nu=5,drift=zero;F2:widen=1.5,drift=zero;F3:widen=1.25,t_nu=5,drift=zero;F4:widen=3" \
+    T2_M0_TEXTVOL=0 \
+    T2_FAMILY_CONFIG="" \
+    T2_M0_TEXTMODE="" \
+    T2_LLM_FALLBACK=none
+LABEL qfbench2.interface_version="2.0"

@@ -1,0 +1,30 @@
+﻿diff --git "a/C:\\Users\\Saifuddin\\Documents\\agenthon-release\\_src\\Time-Series-Forecasting\\agent\\forecast_core/m0_exact.py" "b/C:\\Users\\Saifuddin\\Documents\\Agenthon-2026\\t2work\\sim\\agent_gate\\forecast_core/m0_exact.py"
+index bd99736..402c0c4 100644
+--- "a/C:\\Users\\Saifuddin\\Documents\\agenthon-release\\_src\\Time-Series-Forecasting\\agent\\forecast_core/m0_exact.py"
++++ "b/C:\\Users\\Saifuddin\\Documents\\Agenthon-2026\\t2work\\sim\\agent_gate\\forecast_core/m0_exact.py"
+@@ -110,7 +110,7 @@ def panel_steps(s: pd.Series, horizon: int, asof: pd.Timestamp) -> int:
+     if n <= 0:
+         return horizon
+     ratio = max(n, horizon) / max(min(n, horizon), 1)
+-    return n if ratio >= 2 else horizon
++    return n if ratio > 2 else horizon
+ 
+ 
+ def _ewma_var(x: np.ndarray, lam: float) -> float:
+@@ -188,6 +188,16 @@ def draws(card: dict[str, Any], panels_dir: pathlib.Path, n_draws: int = N_DRAWS
+     for i, (a, h) in enumerate(cells):
+         for j, (b, g) in enumerate(cells):
+             cov[i, j] = min(sc[(a, h)], sc[(b, g)]) * Sigma[ai[a], ai[b]]
++    # widen_gate=G (22 Oct): horizon-gated widening. A cell whose DECLARED horizon is <= G
++    # business days keeps M0's own width (the `widen` factor is undone for that cell); cells
++    # beyond G keep the variant's widening. Generic rule of the horizon only. Rationale: on the
++    # 22 short-horizon practice cards M0's width is calibrated at 1-4 BD (rms z 0.94, 89% inside
++    # the 90% band), while the family widenings were measured on long-horizon Dev cards.
++    gate = v.get("widen_gate")
++    w_all = float(v.get("widen", 1.0))
++    if gate and w_all != 1.0:
++        g_cell = np.array([1.0 / w_all if float(h) <= float(gate) else 1.0 for _a, h in cells])
++        cov = cov * np.outer(g_cell, g_cell)
+     cov = cov + 1e-10 * np.eye(d)
+     try:
+         L = np.linalg.cholesky(cov + 1e-9 * np.eye(d))

@@ -1,0 +1,107 @@
+  0 {}                                            mean 2.6373
+  1 {'drift': 0.5}                                mean 2.5522
+  2 {'drift': 'zero'}                             mean 2.5386
+  3 {'t_nu': 8.0}                                 mean 2.6204
+  4 {'t_nu': 8.0, 'drift': 0.5}                   mean 2.5473
+  5 {'t_nu': 8.0, 'drift': 'zero'}                mean 2.5374
+  6 {'t_nu': 5.0}                                 mean 2.6188
+  7 {'t_nu': 5.0, 'drift': 0.5}                   mean 2.5391
+  8 {'t_nu': 5.0, 'drift': 'zero'}                mean 2.5326
+  9 {'t_nu': 3.0}                                 mean 2.6999
+ 10 {'t_nu': 3.0, 'drift': 0.5}                   mean 2.6205
+ 11 {'t_nu': 3.0, 'drift': 'zero'}                mean 2.6138
+ 12 {'widen': 1.25}                               mean 2.4967
+ 13 {'widen': 1.25, 'drift': 0.5}                 mean 2.4303
+ 14 {'widen': 1.25, 'drift': 'zero'}              mean 2.4218
+ 15 {'widen': 1.25, 't_nu': 8.0}                  mean 2.5007
+ 16 {'widen': 1.25, 't_nu': 8.0, 'drift': 0.5}    mean 2.4339
+ 17 {'widen': 1.25, 't_nu': 8.0, 'drift': 'zero'} mean 2.4236
+ 18 {'widen': 1.25, 't_nu': 5.0}                  mean 2.4921
+ 19 {'widen': 1.25, 't_nu': 5.0, 'drift': 0.5}    mean 2.4349
+ 20 {'widen': 1.25, 't_nu': 5.0, 'drift': 'zero'} mean 2.4203
+ 21 {'widen': 1.25, 't_nu': 3.0}                  mean 2.5726
+ 22 {'widen': 1.25, 't_nu': 3.0, 'drift': 0.5}    mean 2.4988
+ 23 {'widen': 1.25, 't_nu': 3.0, 'drift': 'zero'} mean 2.4853
+ 24 {'widen': 1.5}                                mean 2.4341
+ 25 {'widen': 1.5, 'drift': 0.5}                  mean 2.3875
+ 26 {'widen': 1.5, 'drift': 'zero'}               mean 2.3793
+ 27 {'widen': 1.5, 't_nu': 8.0}                   mean 2.4377
+ 28 {'widen': 1.5, 't_nu': 8.0, 'drift': 0.5}     mean 2.3872
+ 29 {'widen': 1.5, 't_nu': 8.0, 'drift': 'zero'}  mean 2.3733
+ 30 {'widen': 1.5, 't_nu': 5.0}                   mean 2.4302
+ 31 {'widen': 1.5, 't_nu': 5.0, 'drift': 0.5}     mean 2.3814
+ 32 {'widen': 1.5, 't_nu': 5.0, 'drift': 'zero'}  mean 2.3749
+ 33 {'widen': 1.5, 't_nu': 3.0}                   mean 2.4932
+ 34 {'widen': 1.5, 't_nu': 3.0, 'drift': 0.5}     mean 2.4312
+ 35 {'widen': 1.5, 't_nu': 3.0, 'drift': 'zero'}  mean 2.4108
+ 36 {'widen': 1.75}                               mean 2.4282
+ 37 {'widen': 1.75, 'drift': 0.5}                 mean 2.3780
+ 38 {'widen': 1.75, 'drift': 'zero'}              mean 2.3673
+ 39 {'widen': 1.75, 't_nu': 8.0}                  mean 2.4121
+ 40 {'widen': 1.75, 't_nu': 8.0, 'drift': 0.5}    mean 2.3556
+ 41 {'widen': 1.75, 't_nu': 8.0, 'drift': 'zero'} mean 2.3496
+ 42 {'widen': 1.75, 't_nu': 5.0}                  mean 2.4152
+ 43 {'widen': 1.75, 't_nu': 5.0, 'drift': 0.5}    mean 2.3545
+ 44 {'widen': 1.75, 't_nu': 5.0, 'drift': 'zero'} mean 2.3447
+ 45 {'widen': 1.75, 't_nu': 3.0}                  mean 2.4349
+ 46 {'widen': 1.75, 't_nu': 3.0, 'drift': 0.5}    mean 2.3809
+ 47 {'widen': 1.75, 't_nu': 3.0, 'drift': 'zero'} mean 2.3783
+ 48 {'widen': 2.0}                                mean 2.4491
+ 49 {'widen': 2.0, 'drift': 0.5}                  mean 2.3989
+ 50 {'widen': 2.0, 'drift': 'zero'}               mean 2.3945
+ 51 {'widen': 2.0, 't_nu': 8.0}                   mean 2.4331
+ 52 {'widen': 2.0, 't_nu': 8.0, 'drift': 0.5}     mean 2.3818
+ 53 {'widen': 2.0, 't_nu': 8.0, 'drift': 'zero'}  mean 2.3729
+ 54 {'widen': 2.0, 't_nu': 5.0}                   mean 2.4196
+ 55 {'widen': 2.0, 't_nu': 5.0, 'drift': 0.5}     mean 2.3663
+ 56 {'widen': 2.0, 't_nu': 5.0, 'drift': 'zero'}  mean 2.3581
+ 57 {'widen': 2.0, 't_nu': 3.0}                   mean 2.4139
+ 58 {'widen': 2.0, 't_nu': 3.0, 'drift': 0.5}     mean 2.3606
+ 59 {'widen': 2.0, 't_nu': 3.0, 'drift': 'zero'}  mean 2.3542
+ 60 {'widen': 2.5}                                mean 2.6015
+ 61 {'widen': 2.5, 'drift': 0.5}                  mean 2.5669
+ 62 {'widen': 2.5, 'drift': 'zero'}               mean 2.5538
+ 63 {'widen': 2.5, 't_nu': 8.0}                   mean 2.5634
+ 64 {'widen': 2.5, 't_nu': 8.0, 'drift': 0.5}     mean 2.5267
+ 65 {'widen': 2.5, 't_nu': 8.0, 'drift': 'zero'}  mean 2.5179
+ 66 {'widen': 2.5, 't_nu': 5.0}                   mean 2.5255
+ 67 {'widen': 2.5, 't_nu': 5.0, 'drift': 0.5}     mean 2.4848
+ 68 {'widen': 2.5, 't_nu': 5.0, 'drift': 'zero'}  mean 2.4792
+ 69 {'widen': 2.5, 't_nu': 3.0}                   mean 2.4508
+ 70 {'widen': 2.5, 't_nu': 3.0, 'drift': 0.5}     mean 2.4022
+ 71 {'widen': 2.5, 't_nu': 3.0, 'drift': 'zero'}  mean 2.3938
+ 72 {'widen': 3.0}                                mean 2.8071
+ 73 {'widen': 3.0, 'drift': 0.5}                  mean 2.7807
+ 74 {'widen': 3.0, 'drift': 'zero'}               mean 2.7603
+ 75 {'widen': 3.0, 't_nu': 8.0}                   mean 2.7534
+ 76 {'widen': 3.0, 't_nu': 8.0, 'drift': 0.5}     mean 2.7272
+ 77 {'widen': 3.0, 't_nu': 8.0, 'drift': 'zero'}  mean 2.7084
+ 78 {'widen': 3.0, 't_nu': 5.0}                   mean 2.7008
+ 79 {'widen': 3.0, 't_nu': 5.0, 'drift': 0.5}     mean 2.6657
+ 80 {'widen': 3.0, 't_nu': 5.0, 'drift': 'zero'}  mean 2.6467
+ 81 {'widen': 3.0, 't_nu': 3.0}                   mean 2.5536
+ 82 {'widen': 3.0, 't_nu': 3.0, 'drift': 0.5}     mean 2.5125
+ 83 {'widen': 3.0, 't_nu': 3.0, 'drift': 'zero'}  mean 2.5067
+ 84 {'widen': 4.0}                                mean 3.3637
+ 85 {'widen': 4.0, 'drift': 0.5}                  mean 3.3298
+ 86 {'widen': 4.0, 'drift': 'zero'}               mean 3.3046
+ 87 {'widen': 4.0, 't_nu': 8.0}                   mean 3.2619
+ 88 {'widen': 4.0, 't_nu': 8.0, 'drift': 0.5}     mean 3.2326
+ 89 {'widen': 4.0, 't_nu': 8.0, 'drift': 'zero'}  mean 3.2036
+ 90 {'widen': 4.0, 't_nu': 5.0}                   mean 3.1578
+ 91 {'widen': 4.0, 't_nu': 5.0, 'drift': 0.5}     mean 3.1322
+ 92 {'widen': 4.0, 't_nu': 5.0, 'drift': 'zero'}  mean 3.1020
+ 93 {'widen': 4.0, 't_nu': 3.0}                   mean 2.8819
+ 94 {'widen': 4.0, 't_nu': 3.0, 'drift': 0.5}     mean 2.8538
+ 95 {'widen': 4.0, 't_nu': 3.0, 'drift': 'zero'}  mean 2.8371
+
+GLOBAL BEST {'widen': 1.75, 't_nu': 5.0, 'drift': 'zero'} 2.3447
+  F1 best {'t_nu': 3.0, 'drift': 'zero'} 0.8265  (global-best variant gives 1.2352)
+  F2 best {'widen': 1.75, 'drift': 'zero'} 2.5026  (global-best variant gives 2.5443)
+  F3 best {'widen': 1.25, 't_nu': 5.0, 'drift': 'zero'} 1.6316  (global-best variant gives 1.7452)
+  F4 best {'widen': 3.0} 3.1206  (global-best variant gives 3.5525)
+
+PER-FAMILY MIX in-sample 2.0729 | CV: pick odd->score even 1.9975  pick even->score odd 2.3534
+  picks (all cards): {'F1': {'t_nu': 3.0, 'drift': 'zero'}, 'F2': {'widen': 1.75, 'drift': 'zero'}, 'F3': {'widen': 1.25, 't_nu': 5.0, 'drift': 'zero'}, 'F4': {'widen': 3.0}}
+  picks odd : {'F1': {'t_nu': 3.0}, 'F2': {'widen': 1.75, 'drift': 'zero'}, 'F3': {'widen': 1.25, 't_nu': 8.0, 'drift': 0.5}, 'F4': {'widen': 3.0}}
+  picks even: {'F1': {'t_nu': 5.0, 'drift': 'zero'}, 'F2': {'widen': 1.25, 'drift': 'zero'}, 'F3': {'t_nu': 5.0, 'drift': 'zero'}, 'F4': {'widen': 3.0}}

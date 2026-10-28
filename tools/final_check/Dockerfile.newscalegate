@@ -1,0 +1,14 @@
+# Track 2 "newscalegate" (22 Oct 2026): the submitted newscale image with two changes in ONE file.
+# forecast_core/m0_exact.py:
+#  1. panel_steps(): section 3.7 step 5 is strict (ratio > 2), as in newscalefix.
+#  2. widen_gate=G (generic rule of the declared horizon): a cell with horizon <= G business days
+#     keeps M0's own width; the family widening applies only beyond G. Measured on the 22
+#     short-horizon practice cards (all horizons 1-4 BD): newscalefix 1.2156 -> 1.1105 on the
+#     leaderboard scale, lower on both split halves, below exact M0 (1.1419) on both halves.
+#     No Dev unit has a horizon <= 5 BD, so the Dev result (1.9190) is unchanged.
+# T2_M0_VARIANT is parsed by the unchanged agent.py (key=value list) and merged with the family
+# variants; everything else (environment, variants, text off) is inherited from newscale.
+FROM ghcr.io/syehsyoh-dokling/qf-forecast@sha256:eda3d37349200fe0cb8ded34f677c1d4566695a4a4c5930a89e37e3b2924810a
+COPY m0_exact.py /agent/forecast_core/m0_exact.py
+ENV T2_M0_VARIANT="widen_gate=5"
+LABEL qfbench2.interface_version="2.0"
